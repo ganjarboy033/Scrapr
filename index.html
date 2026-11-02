@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Antarmuka praktis untuk membuka layanan unduh video pilihan.">
+  <title>YT Downloader Hub</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="logo">▶</div>
+      <div><p class="eyebrow">VIDEO TOOLKIT</p><h1>YT Downloader <span>Hub</span></h1></div>
+      <button id="themeBtn" class="icon-btn" aria-label="Ganti tema">☼</button>
+    </header>
+
+    <section class="hero">
+      <div class="pill"><i></i> SIMPLE • FAST • RESPONSIVE</div>
+      <h2>Video favorit,<br><em>lebih mudah diakses.</em></h2>
+      <p class="muted">Tempel tautan video, pilih layanan, lalu lanjutkan proses di situs penyedia.</p>
+    </section>
+
+    <section class="panel">
+      <label for="videoUrl">Tautan video YouTube</label>
+      <div class="input-wrap">
+        <input id="videoUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="url">
+        <button id="pasteBtn" class="paste">Tempel</button>
+      </div>
+      <p id="error" class="error" role="alert"></p>
+
+      <label>Pilih layanan</label>
+      <div class="services">
+        <button class="service selected" data-service="snapyt">
+          <span class="service-icon">S</span><span><b>SnapYT</b><small>snapyt.app</small></span><span class="check">✓</span>
+        </button>
+        <button class="service" data-service="ssyoutube">
+          <span class="service-icon alt">⇩</span><span><b>SSYouTube</b><small>ssyoutube.me</small></span><span class="check">✓</span>
+        </button>
+      </div>
+      <button id="goBtn" class="go">Lanjutkan ke layanan <span>↗</span></button>
+      <p class="hint">Layanan eksternal akan terbuka di tab baru. Ikuti instruksi dan pilihan kualitas yang tersedia di situs tersebut.</p>
+    </section>
+
+    <section class="notice">
+      <div class="notice-icon">ⓘ</div>
+      <div><b>Gunakan secara bertanggung jawab</b><p>Unduh hanya video yang kamu miliki, yang berada di domain publik, atau yang izinnya memang kamu miliki. Hormati hak cipta dan ketentuan YouTube serta situs penyedia.</p></div>
+    </section>
+
+    <footer>YT Downloader Hub <span>•</span> Web app independen, bukan layanan resmi YouTube.</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
